@@ -13,3 +13,15 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
+
+    def __str__(self):
+        return f"{self.__balance}"
+
+def main():
+    savings = BankAccount(100)
+    print(savings.get_balance())
+
+    print(savings)
+
+if __name__ == "__main__":
+    main()
