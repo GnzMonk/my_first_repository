@@ -2,9 +2,9 @@ import requests
 import time
 import tokenFile  # type: ignore
 
-
+# Объявляем константы
 API_URL = 'https://api.telegram.org/bot'
-BOT_TOKEN = tokenFile.get_token()
+BOT_TOKEN = tokenFile.get_token() # достаём токен из файла с токеном
 TEXT = 'Ура! Классный апдейт!'
 MAX_COUNTER = 100
 
