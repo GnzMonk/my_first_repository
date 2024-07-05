@@ -1,20 +1,15 @@
 import tkinter as tk
 import TestWiget as tw
+import TaskWidget as TaskW
 
 root = tk.Tk()
 root.title("Gnz")
 root.geometry("250x250")
 
-def print_wtf():
-    print("wtf")
+widget1 = TaskW.TaskWidget()
+widget1.show()
 
-def print_happy():
-    print("happy")
-
-
-wiget1 = tw.TestWiget("GonzoMonk", print_wtf)
-wiget1.show()
-wiget2 = tw.TestWiget("GonzoMonk", print_happy)
-wiget2.show()
+widget2 = TaskW.TaskWidget(2)
+widget2.show()
 
 root.mainloop()

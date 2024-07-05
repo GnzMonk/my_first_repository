@@ -9,7 +9,6 @@ class TestWiget:
         self.__run_button = tk.Button(self.__main_frame, text="run", command=self.__func_button)
         self.___result_text = tk.Label(self.__main_frame, text='result')
 
-
     def show(self):
         try:
             self.__text_wiget.pack(anchor="w")
